@@ -3,17 +3,17 @@ function showTime() {
 	var startDate = new Date(2016, 04, 24);
 	var date3 = currentDate-startDate;
 	var days=Math.floor(date3/(24*3600*1000));
-	var leave1=date3%(24*3600*1000);     //¼ÆËãÌìÊıºóÊ£ÓàµÄºÁÃëÊı
+	var leave1=date3%(24*3600*1000);     //è®¡ç®—å¤©æ•°åå‰©ä½™çš„æ¯«ç§’æ•°
 	var hours=Math.floor(leave1/(3600*1000));
-	var leave2=leave1%(3600*1000);        //¼ÆËãĞ¡Ê±ÊıºóÊ£ÓàµÄºÁÃëÊı
+	var leave2=leave1%(3600*1000);        //è®¡ç®—å°æ—¶æ•°åå‰©ä½™çš„æ¯«ç§’æ•°
 	var minutes=Math.floor(leave2/(60*1000));
-	var leave3=leave2%(60*1000);          //¼ÆËã·ÖÖÓÊıºóÊ£ÓàµÄºÁÃëÊı
+	var leave3=leave2%(60*1000);          //è®¡ç®—åˆ†é’Ÿæ•°åå‰©ä½™çš„æ¯«ç§’æ•°
 	var seconds=Math.round(leave3/1000);
 	if (minutes < 10) 
 	minutes = "0" + minutes; 
 	if (seconds < 10) 
 	seconds = "0" + seconds; 
-	var currentTimeString = "Dear RiLi:<br>"
+	var currentTimeString = "Dear RuiLi:<br>"
 		+ "I have been in love with you for:<br> "
 		+ "&nbsp&nbsp&nbsp&nbsp&nbsp"
 		+ "<c style=\"color: #CCFF99; text-shadow:2px 3px 3px #222; font-family:Microsoft YaHei; font-size:24px\" >" + days +" </c>day " 
@@ -23,6 +23,6 @@ function showTime() {
 		+ "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTo hold your hand, To grow old with you.<br>"
 		+ "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"
 		+	"<c style=\"color: #CCCCCC; text-shadow:2px 3px 3px #222; font-family:Microsoft YaHei; font-size:20px\" >----Love.jjp   2019-02-14</c>"; 
-	document.getElementById("show").innerHTML=currentTimeString;  //¸ÄÕâµØ·½
+	document.getElementById("show").innerHTML=currentTimeString;  //æ”¹è¿™åœ°æ–¹
 	window.setTimeout("showTime()", 1000); 
 } 
